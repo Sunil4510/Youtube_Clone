@@ -8,8 +8,8 @@ function App() {
     <div className="app">
       <Header/>
       <div className="app_page flex">
-        <Sidebar/>
-        <Rvideo/>
+          <Sidebar/>
+          <Rvideo/>
       </div>
       { 
         /*Header */

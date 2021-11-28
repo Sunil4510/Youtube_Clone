@@ -1,3 +1,15 @@
 .rvideo{
     flex:0.8;
 }
+.rvideo_scroll::-webkit-scrollbar{
+    visibility: hidden;
+}
+.Videos_scroll::-webkit-scrollbar{
+    visibility: hidden;
+}
+.rvideo::-webkit-scrollbar{
+    visibility: hidden;
+}
+.rvideo::-moz-scrollbar{
+    visibility: hidden;
+}

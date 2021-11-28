@@ -5,7 +5,7 @@ import VideoCallIcon from '@material-ui/icons/VideoCall';
 import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import SearchIcon from '@material-ui/icons/Search';
-import { Avatar } from '@material-ui/core';
+import { Avatar, Typography } from '@material-ui/core';
 import Tooltip from "@material-ui/core/Tooltip";
 import IconButton from "@material-ui/core/IconButton";
 
@@ -23,11 +23,11 @@ const Header = () => {
         <div className="header flex items-center justify-between p-2 sticky z-100 bg-white w-auto shadow-md top-0 sm:p-0 sm:h-10">
            <div className="header_left flex items-center justify-evenly">
                 <MenuIcon className="header_menu ml-3 sm:ml-0 cursor-pointer"/>
-                <Tooltip title={<h1>Youtube Home</h1>} >
+                <Tooltip title={<Typography>Youtube Home</Typography>} >
                     <YoutubeIcon className="header_youtube ml-3 sm:ml-0 cursor-pointer"/>
                 </Tooltip>  
                     
-                <Tooltip title="Youtube Home" >
+                <Tooltip title={<Typography>Youtube Home</Typography>}>
                     <p className="font-bold select-none text-white text-3xl bg-gray-400 h-12 shadow-md w-40 sm:w-10 sm:h-3 sm:text-2xs rounded text-center cursor-pointer">
                     <span className="text-white mt-4">YouTube</span></p>
                 </Tooltip>  
@@ -50,15 +50,15 @@ const Header = () => {
             </div>
 
            <div className="header_right flex items-center mr-4 ml-2 space-x-6 sm:space-x-1">
-               <Tooltip title="Create Video" >
+               <Tooltip title={<Typography>Create Video</Typography>} >
                     <VideoCallIcon className="cursor-pointer"/>
                 </Tooltip>    
                 
-                <Tooltip title="Youtube Apps" >
+                <Tooltip title={<Typography>Youtube Apps</Typography>}>
                     <AppsIcon className="cursor-pointer"/>
                 </Tooltip>
 
-                <Tooltip title="Notifications" >
+                <Tooltip title={<Typography>Notifications</Typography>}>
                     <NotificationsIcon className="cursor-pointer"/>
                 </Tooltip>    
                 <Avatar className="header_avatar cursor-pointer"/>
