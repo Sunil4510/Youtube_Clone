@@ -1,16 +1,21 @@
 import './App.css';
 import Header from './components/Header';
-import Rvideo from './components/Rvideo';
-import Sidebar from './components/Sidebar';
-
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
+import Search from './Routes/Search';
+import Home from './Routes/Home';
 function App() {
   return (
     <div className="app">
+      <Router>
       <Header/>
-      <div className="app_page flex">
-          <Sidebar/>
-          <Rvideo/>
-      </div>
+        <Routes>
+          <Route path="/search/:searchterm" element={<Search/>} />
+          <Route path="/search" element={<Search/>} />
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+      </Router>
+     
+     
       { 
         /*Header */
         /*Sidebar */

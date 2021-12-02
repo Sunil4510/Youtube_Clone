@@ -13,7 +13,10 @@ import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined"
 
 
 const Sidebar = () => {
+
     return (
+
+        <>
         <div className="sidebar">
             <Sidebarow selected Icon={HomeIcon} title="Home"/>
             <Sidebarow Icon={WhatshotIcon} title="Trending"/>
@@ -28,6 +31,8 @@ const Sidebar = () => {
             <Sidebarow Icon={ExpandMoreOutlinedIcon} title="Show More"/>
             <hr className="h-px border-0 bg-gray-200 mt-3 mb-3"/>
         </div>
+        
+    </>
     )
 }
 
