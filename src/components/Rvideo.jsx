@@ -9,7 +9,7 @@ const Rvideo = () => {
         <>
         
         <div className="rvideo bg-gray-100 h-screen overflow-x-scroll">
-            <div className="rvideo_scroll flex overflow-x-scroll py-3 sticky top-0 bg-gray-100 z-100 shadow-lg w-screen">
+            <div className="rvideo_scroll flex overflow-x-scroll py-3 sm:py-2 px-2 sticky top-0 bg-gray-100 z-100 shadow-lg w-screen">
                 <h1 className={look}>Reactjs</h1>
                 <h1 className={look}>Nodejs</h1>
                 <h1 className={look}>Sports</h1>

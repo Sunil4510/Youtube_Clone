@@ -7,7 +7,7 @@ const Search = () => {
         <div className="app_page flex">
             <Sidebar/>
             <div>
-                <h1>You searched for: "{searchdata}"</h1>
+                <h1 className="text-gray-600 font-semibold ml-5 font-mono">You searched for: "{searchdata}"</h1>
             </div>
          </div>
     )
